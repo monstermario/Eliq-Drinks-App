@@ -1,0 +1,35 @@
+/* data-grid.component.css */
+.mat-table {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.mat-header-cell {
+  color: #fff;
+  background-color: #3f51b5;
+  font-weight: bold;
+}
+
+.mat-cell,
+.mat-header-cell {
+  padding: 8px;
+  text-align: left;
+}
+
+.mat-row:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.mat-row:hover {
+  background-color: #d1c4e9;
+}
+
+.mat-paginator {
+  background-color: #fff;
+  color: #3f51b5;
+}
+
+.mat-sort-header-arrow,
+.mat-sort-header-button {
+  color: #3f51b5;
+}
