@@ -1,27 +1,67 @@
-# MyAngularApp
+# Eliq Drinks App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+## Overview
 
-## Development server
+Eliq Drinks App is a white-label drinks application designed to showcase a list of alcoholic drinks with their details fetched from TheCocktailDB API. The app is designed to be configurable through a `config.json` file, enabling easy branding and customization. The app is built using Angular 17 and can be deployed to GitHub Pages for demonstration purposes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Home Screen**: Displays a list of drinks with images and names.
+- **Details Screen**: Provides detailed information about a selected drink, including an image, ingredients, and instructions in multiple languages.
+- **White-Label Configuration**: Supports customization through a `config.json` file to change branding and UI elements.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- Angular 17
+- Angular Router
+- HttpClient (for API requests)
+- Angular Material (for UI components)
+- GitHub Pages (for deployment)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ensure you have the following installed:
 
-## Running end-to-end tests
+- Node.js (v16 or higher)
+- Angular CLI (v17)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Installation
 
-## Further help
+1. **Clone the repository:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   git clone https://github.com/monstermario/Eliq-Drinks-App.git
+   cd Eliq-Drinks-App
+2. **Install dependencies:**
+
+    ```bash
+   npm install
+3. **Run the application:**
+    ```bash
+   npm start
+### Configuration
+The app uses a config.json file to manage branding and UI elements. Here is an example of the config.json file:
+    
+    {
+        "appName": "Eliq Drinks",
+        "themeColor": "#ff4081",
+    }
+### Building the App
+To build the app for production, run:
+    
+    ng build --prod
+
+### API Documentation
+API documentation can be found at [TheCocktailDB API](https://www.thecocktaildb.com/api.php).
+
+### Design Decisions
+
+1. Angular Material: Used for consistent and modern UI components.
+2. HttpClient: Simplifies HTTP requests to the API.
+3. Configurable UI: The config.json file allows for easy rebranding and customization without altering the core codebase.
+4. Modular Architecture: Organized code into components and services for maintainability and scalability.
+
+### Conclusion
+This project demonstrates the use of Angular 17 to build a white-label drinks application with configurable UI elements. By following the instructions above, you can set up, run, and customize the app to fit various branding requirements.

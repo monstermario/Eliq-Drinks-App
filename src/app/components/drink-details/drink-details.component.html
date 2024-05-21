@@ -1,0 +1,26 @@
+<div class="loading" *ngIf="loadingService.loading$ | async">
+  <mat-spinner></mat-spinner>
+</div>
+<div class="drink-details-container" *ngIf="drink">
+  <mat-card>
+    <img
+      mat-card-image
+      [src]="drink.strDrinkThumb"
+      alt="{{ drink.strDrink }}"
+      class="drink-image"
+    />
+    <mat-card-header>
+      <mat-card-title>{{ drink.strDrink }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <h3>Ingredients:</h3>
+      <ul>
+        <li *ngFor="let ingredient of getIngredients(drink)">
+          {{ ingredient }}
+        </li>
+      </ul>
+      <h3>Instructions:</h3>
+      <p>{{ drink.strInstructions }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
