@@ -1,0 +1,27 @@
+<div class="loading" *ngIf="loadingService.loading$ | async">
+  <mat-spinner></mat-spinner>
+</div>
+<div 
+  class="drinks-container"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  [infiniteScrollThrottle]="500"
+  (scrolled)="onScroll()"
+>
+  <div *ngFor="let drink of drinksData" class="drink-card">
+    <mat-card>
+      <img
+        mat-card-image
+        [src]="drink.strDrinkThumb"
+        alt="{{ drink.strDrink }}"
+        class="drink-image"
+      />
+      <mat-card-title>{{ drink.strDrink }}</mat-card-title>
+      <mat-card-actions>
+        <a mat-button color="primary" [routerLink]="['/drink', drink.idDrink]"
+          >View Details</a
+        >
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

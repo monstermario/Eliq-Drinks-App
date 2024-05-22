@@ -1,0 +1,43 @@
+.drink-details-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.drink-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+mat-card {
+  max-width: 600px;
+  width: 100%;
+  margin: 20px;
+}
+
+mat-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
